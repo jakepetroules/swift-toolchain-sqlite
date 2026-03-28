@@ -4,11 +4,7 @@ permissions:
   contents: write
   pull-requests: write
 
-on:
-  schedule:
-    # Run daily at 9:00 AM PST
-    - cron: '0 17 * * *'
-  workflow_dispatch:
+on: [push]
 
 jobs:
   update-sqlite:
